@@ -16,7 +16,8 @@ I am **Wenduo Cheng**, a 2nd-year Ph.D. student in the [Ray and Stephanie Lane C
 My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. My current research interests lie in applying AI to accelerate biological discovery, particularly through biological foundation models and autonomous agents. I am especially interested in:
 
 - Building biologically meaningful “virtual cell” models that capture evolutionary and regulatory constraints.
-- Using large language models and agents to accelerate both wet-lab experiments and dry-lab analysis, supporting scientists in making more robust and faster biological discoveries.
+- Using large language models and autonomous agents to accelerate both experimental design and computational analysis.
+- Revealing the principles of gene regulation through multimodal modeling.
 
 
 
