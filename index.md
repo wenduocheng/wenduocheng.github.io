@@ -25,14 +25,6 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
 - Using large language models and agents to accelerate both wet-lab experiments and dry-lab analysis, supporting scientists in making more robust and faster biological discoveries.
 
 
-
-## 🎓 Education
-
-- **Ph.D. in Computational Biology**, Carnegie Mellon University, 2023–present
-- **M.S. in Computational Biology**, Carnegie Mellon University, 2023
-- **B.S. in Genetics and Genomics**, Duke Kunshan University, 2021
-
-
 # 🔥 News
 *November 2025:* 🎉 DNALongBench has been featured for the [Nature Communications Editors’ Highlights collection -- Computational and Theoretical Biology](https://www.nature.com/collections/cfhfejghec)!
 
@@ -50,6 +42,12 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
 - **Cyanobacterial Blooms Are Not a Result of Positive Selection by Freshwater Eutrophication** ([paper](https://doi.org/10.1128/spectrum.03194-22)) — *Microbiology Spectrum* 12(3), e03194–22, 2022. Yang Yu<sup>†</sup>, **Wenduo Cheng<sup>†</sup>**, Xiaoyuan Chen, Qisen Guo, Huansheng Cao.
 - **RNA-sequencing and Mathematical Modeling Identify Suite of Light-Sensitive Circadian Genes in an Orb-Web Weaving Spider** ([paper](https://doi.org/10.21203/rs.3.rs-1036447/v1)) — Preprint, *Research Square*, 2021. Natalia Toporikova, **Wenduo Cheng**, Leyuan Qian, Andrew Mah, Thomas Clarke, Thomas C. Jones, Darrell Moore, Nadia A. Ayoub.
 
+
+## 🎓 Education
+
+- 2024–present,  **Ph.D. in Computational Biology**, Carnegie Mellon University
+- 2022-2024, **M.S. in Computational Biology**, Carnegie Mellon University
+- 2018-2022, **B.S. in Genetics and Genomics**, Duke Kunshan University
 
 # 💬 Miscellaneous
 I’m obsessed with anything involving a racket (pickleball, tennis, squash, badminton, you name it), plus ultimate frisbee and climbing whenever I can sneak it in. I’m also competitive at board games (e.g., 狼人杀, 三国杀, 剧本杀). And I spend a lot of time in the kitchen, happily experimenting with Chinese cuisine.
