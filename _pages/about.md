@@ -19,7 +19,7 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
 
 # 🔥 News
 
-*(News will be posted soon.)*
+*2025.11: 🎉 DNALongBench is accepted by Nature Communications!*
 
 # 📝 Publications
 
