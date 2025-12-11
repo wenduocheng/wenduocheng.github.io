@@ -11,16 +11,18 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # About Me
 
-I am **Wenduo Cheng**, a 2rd year Ph.D. student in Computational Biology at Carnegie Mellon University. I am fortunate to be advised by [Jian Ma](https://www.cs.cmu.edu/~jianma/). 
+I am **Wenduo Cheng**, a 2nd-year Ph.D. student in the Ray and Stephanie Lane Computational Biology Department at Carnegie Mellon University. I am fortunate to be advised by [Jian Ma](https://www.cs.cmu.edu/~jianma/). Before Ph.D., I completed a M.S. in Computational Biology at CMU and B.S. in genetics and genomics at Duke Kunshan University.
 
-My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. I am currently focused on applying AI to accelerate biological discovery, especially through biological foundation models and autonomous agents.
+My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. My current research interests lie in applying AI to accelerate biological discovery, particularly through biological foundation models and autonomous agents. Specifically, I am intersted in:
 
 
 
 # 🔥 News
-*November 2025:* 🎉 DNALongBench has been featured for the Nature Communications Editors’ Highlights collection on Computational and Theoretical Biology! 
-Check it out here: [Nature Communications Editors’ Highlights – Computational and Theoretical Biology](https://www.nature.com/collections/cfhfejghec).
+*November 2025:* 🎉 DNALongBench has been featured for the [Nature Communications Editors’ Highlights collection -- Computational and Theoretical Biology](https://www.nature.com/collections/cfhfejghec)!
+
 *September 2025:* 🎉 Our DNALongBench work is accepted by Nature Communications!
+
+*August 2025:* 🎉 Our L2G paper is accepted by TMLR 2025!
 
 # 📝 Publications
 
