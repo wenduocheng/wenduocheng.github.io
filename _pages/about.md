@@ -15,6 +15,8 @@ I am **Wenduo Cheng**, a 2nd-year Ph.D. student in the Ray and Stephanie Lane Co
 
 My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. My current research interests lie in applying AI to accelerate biological discovery, particularly through biological foundation models and autonomous agents. Specifically, I am intersted in:
 
+How to build a virtual cell model?
+How to accelerate wet-lab experiments and scientific discoveries using LLM?
 
 
 # 🔥 News
@@ -34,12 +36,5 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
 - **Cyanobacterial Blooms Are Not a Result of Positive Selection by Freshwater Eutrophication** ([paper](https://doi.org/10.1128/spectrum.03194-22)) — *Microbiology Spectrum* 12(3), e03194–22, 2022. Yang Yu<sup>†</sup>, **Wenduo Cheng<sup>†</sup>**, Xiaoyuan Chen, Qisen Guo, Huansheng Cao.
 - **RNA-sequencing and Mathematical Modeling Identify Suite of Light-Sensitive Circadian Genes in an Orb-Web Weaving Spider** ([paper](https://doi.org/10.21203/rs.3.rs-1036447/v1)) — Preprint, *Research Square*, 2021. Natalia Toporikova, **Wenduo Cheng**, Leyuan Qian, Andrew Mah, Thomas Clarke, Thomas C. Jones, Darrell Moore, Nadia A. Ayoub.
 
-# 📖 Education
 
-- **Carnegie Mellon University** — Ph.D. in Computational Biology (Aug 2024 – Present), Pittsburgh, PA. GPA: 4.00/4.33. Advisor: [Dr. Jian Ma](https://www.cs.cmu.edu/~jianma/).
-- **Carnegie Mellon University** — M.S. in Computational Biology (Aug 2022 – May 2024), Pittsburgh, PA. GPA: 4.06/4.33. Thesis: Leveraging pre-trained language models to address genomics tasks. Awards: Research Excellence and Honors; Outstanding Academic Achievement.
-- **Duke Kunshan University / Duke University** — B.S. in Biology and B.S. in Interdisciplinary Studies (May 2018 – May 2022), Kunshan, China / Durham, NC. GPA: 3.9/4.0, *Magna Cum Laude*.
-
-# 💬 Invited Talks
-
-*(Invited talks will be added here.)*
+# 💬 Hobbies
