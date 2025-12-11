@@ -9,8 +9,11 @@ redirect_from:
 ---
 
 <span class='anchor' id='about-me'></span>
+# About Me
 
-I am **Wenduo Cheng**, a Ph.D. student in Computational Biology at Carnegie Mellon University advised by [Jian Ma](https://www.cs.cmu.edu/~jianma/). My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. I am currently focused on applying AI to accelerate biological discovery, especially through biological foundation models and autonomous agents.
+I am **Wenduo Cheng**, a 2rd year Ph.D. student in Computational Biology at Carnegie Mellon University. I am fortunate to be advised by [Jian Ma](https://www.cs.cmu.edu/~jianma/). 
+
+My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. I am currently focused on applying AI to accelerate biological discovery, especially through biological foundation models and autonomous agents.
 
 
 
