@@ -18,8 +18,9 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
 
 
 # 🔥 News
-
-*2025.11: 🎉 DNALongBench is accepted by Nature Communications!*
+*November 2025:* 🎉 DNALongBench has been featured for the Nature Communications Editors’ Highlights collection on Computational and Theoretical Biology! 
+Check it out here: [Nature Communications Editors’ Highlights – Computational and Theoretical Biology](https://www.nature.com/collections/cfhfejghec).
+*September 2025:* 🎉 Our DNALongBench work is accepted by Nature Communications!
 
 # 📝 Publications
 
