@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Wenduo Cheng"
-description              : "Ph.D. student in Computational Biology at Carnegie Mellon University studying AI for biological discovery."
+# description              : "Ph.D. student in Computational Biology at Carnegie Mellon University studying AI for biological discovery."
 repository               : "wenduocheng/wenduocheng.github.io"
 google_scholar_stats_use_cdn : true
 
