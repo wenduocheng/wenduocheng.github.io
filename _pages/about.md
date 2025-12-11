@@ -39,9 +39,9 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
 
 # 🎓 Education
 
-- **Ph.D. in Computational Biology**, Carnegie Mellon University, 2023–present
-- **M.S. in Computational Biology**, Carnegie Mellon University, 2023
-- **B.S. in Genetics and Genomics**, Duke Kunshan University, 2021
+- 2024–present, **Ph.D. in Computational Biology**, Carnegie Mellon University
+- 2022-2024, **M.S. in Computational Biology**, Carnegie Mellon University
+- 2018-2022, **B.S. in Genetics and Genomics**, Duke Kunshan University
 
 # 🎲 Miscellaneous
 I’m obsessed with anything involving a racket (pickleball, tennis, squash, badminton, you name it), plus ultimate frisbee and climbing whenever I can sneak it in. I’m also competitive at board games (e.g., 狼人杀, 三国杀, 剧本杀). And I spend a lot of time in the kitchen, happily experimenting with Chinese cuisine.
