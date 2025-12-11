@@ -13,10 +13,11 @@ redirect_from:
 
 I am **Wenduo Cheng**, a 2nd-year Ph.D. student in the Ray and Stephanie Lane Computational Biology Department at Carnegie Mellon University. I am fortunate to be advised by [Jian Ma](https://www.cs.cmu.edu/~jianma/). Before Ph.D., I completed a M.S. in Computational Biology at CMU and B.S. in genetics and genomics at Duke Kunshan University.
 
-My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. My current research interests lie in applying AI to accelerate biological discovery, particularly through biological foundation models and autonomous agents. Specifically, I am intersted in:
+My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. My current research interests lie in applying AI to accelerate biological discovery, particularly through biological foundation models and autonomous agents. I am especially interested in:
 
-How to build a virtual cell model?
-How to accelerate wet-lab experiments and scientific discoveries using LLM?
+- **Building biologically meaningful “virtual cell” models** that capture evolutionary and regulatory constraints.
+- **Using large language models and agents** to accelerate both wet-lab experiments and dry-lab analysis, supporting scientists in making more robust and faster biological discoveries.
+
 
 
 # 🔥 News
