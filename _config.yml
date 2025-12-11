@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Wenduo Cheng"
-# description              : "Ph.D. student in Computational Biology at Carnegie Mellon University studying AI for biological discovery."
+description              : "Ph.D. student in Computational Biology at Carnegie Mellon University"
 repository               : "wenduocheng/wenduocheng.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,13 +23,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Wenduo Cheng"
   avatar           : "images/profile.jpeg"
-  bio              : "Ph.D. student in Computational Biology at Carnegie Mellon University"
+  bio              : 
   location         : "Pittsburgh, PA"
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=zXicNrUAAAAJ&hl=en&inst=3203679203499159833"
   email            : "wenduoc@andrew.cmu.edu"
-  cv               : "/cv/"
+  cv               : "/Wenduo_Cheng_CV.pdf"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
