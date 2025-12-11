@@ -11,7 +11,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # About Me
 
-I am **Wenduo Cheng**, a 2nd-year Ph.D. student in the Ray and Stephanie Lane Computational Biology Department at Carnegie Mellon University. I am fortunate to be advised by [Jian Ma](https://www.cs.cmu.edu/~jianma/). Before Ph.D., I completed a M.S. in Computational Biology at CMU and B.S. in genetics and genomics at Duke Kunshan University.
+I am **Wenduo Cheng**, a 2nd-year Ph.D. student in the [Ray and Stephanie Lane Computational Biology Department](https://www.cmu.edu/cbd/) at Carnegie Mellon University. I am fortunate to be advised by [Jian Ma](https://www.cs.cmu.edu/~jianma/). Before my Ph.D., I completed an M.S. in Computational Biology at CMU and a B.S. in Genetics and Genomics at [Duke Kunshan University](https://www.dukekunshan.edu.cn/).
 
 My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. My current research interests lie in applying AI to accelerate biological discovery, particularly through biological foundation models and autonomous agents. I am especially interested in:
 
@@ -39,3 +39,4 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
 
 
 # 💬 Hobbies
+I’m obsessed with anything involving a racket (pickleball, tennis, squash, badminton, you name it), plus ultimate frisbee and climbing whenever I can sneak it in. I’m also competitive at board games (e.g., 狼人杀, 三国杀, 剧本杀). And I spend a lot of time in the kitchen, happily experimenting with Chinese cuisine.
