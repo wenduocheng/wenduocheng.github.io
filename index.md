@@ -1,10 +1,4 @@
 ---
-permalink: /about/
-redirect_to: /
-title: "About"
----
-
-This page has moved to the homepage.
 permalink: /
 title: ""
 excerpt: ""
@@ -15,30 +9,16 @@ redirect_from:
 ---
 
 <span class='anchor' id='about-me'></span>
-# About Me
 
-I am **Wenduo Cheng**, a 2nd-year Ph.D. student in the [Ray and Stephanie Lane Computational Biology Department](https://www.cmu.edu/cbd/) at Carnegie Mellon University. I am fortunate to be advised by [Jian Ma](https://www.cs.cmu.edu/~jianma/). Before my Ph.D., I completed an M.S. in Computational Biology at CMU and a B.S. in Genetics and Genomics at [Duke Kunshan University](https://www.dukekunshan.edu.cn/).
+I am **Wenduo Cheng**, a Ph.D. student in Computational Biology at Carnegie Mellon University advised by [Dr. Jian Ma](https://www.cs.cmu.edu/~jianma/). My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. I am currently focused on applying AI to accelerate biological discovery, especially through biological foundation models and autonomous agents.
 
-My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. My current research interests lie in applying AI to accelerate biological discovery, particularly through biological foundation models and autonomous agents. I am especially interested in:
-
-- Building biologically meaningful “virtual cell” models that capture evolutionary and regulatory constraints.
-- Using large language models and agents to accelerate both wet-lab experiments and dry-lab analysis, supporting scientists in making more robust and faster biological discoveries.
-
-
-
-## 🎓 Education
-
-- **Ph.D. in Computational Biology**, Carnegie Mellon University, 2023–present
-- **M.S. in Computational Biology**, Carnegie Mellon University, 2023
-- **B.S. in Genetics and Genomics**, Duke Kunshan University, 2021
-
+- **Current**: Ph.D. in Computational Biology, Carnegie Mellon University (Aug 2024 – Present), GPA: 4.00/4.33.
+- **M.S.**: Computational Biology, Carnegie Mellon University (Aug 2022 – May 2024), GPA: 4.06/4.33. Thesis: Leveraging pre-trained language models to address genomics tasks. Awards: Research Excellence and Honors; Outstanding Academic Achievement.
+- **B.S.**: Biology and Interdisciplinary Studies, Duke Kunshan University / Duke University (May 2018 – May 2022), GPA: 3.9/4.0, *Magna Cum Laude*.
 
 # 🔥 News
-*November 2025:* 🎉 DNALongBench has been featured for the [Nature Communications Editors’ Highlights collection -- Computational and Theoretical Biology](https://www.nature.com/collections/cfhfejghec)!
 
-*September 2025:* 🎉 Our DNALongBench work is accepted by Nature Communications!
-
-*August 2025:* 🎉 Our L2G paper is accepted by TMLR 2025!
+*(News will be posted soon.)*
 
 # 📝 Publications
 
@@ -50,6 +30,12 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
 - **Cyanobacterial Blooms Are Not a Result of Positive Selection by Freshwater Eutrophication** ([paper](https://doi.org/10.1128/spectrum.03194-22)) — *Microbiology Spectrum* 12(3), e03194–22, 2022. Yang Yu<sup>†</sup>, **Wenduo Cheng<sup>†</sup>**, Xiaoyuan Chen, Qisen Guo, Huansheng Cao.
 - **RNA-sequencing and Mathematical Modeling Identify Suite of Light-Sensitive Circadian Genes in an Orb-Web Weaving Spider** ([paper](https://doi.org/10.21203/rs.3.rs-1036447/v1)) — Preprint, *Research Square*, 2021. Natalia Toporikova, **Wenduo Cheng**, Leyuan Qian, Andrew Mah, Thomas Clarke, Thomas C. Jones, Darrell Moore, Nadia A. Ayoub.
 
+# 📖 Education
 
-# 💬 Miscellaneous
-I’m obsessed with anything involving a racket (pickleball, tennis, squash, badminton, you name it), plus ultimate frisbee and climbing whenever I can sneak it in. I’m also competitive at board games (e.g., 狼人杀, 三国杀, 剧本杀). And I spend a lot of time in the kitchen, happily experimenting with Chinese cuisine.
+- **Carnegie Mellon University** — Ph.D. in Computational Biology (Aug 2024 – Present), Pittsburgh, PA. GPA: 4.00/4.33. Advisor: [Dr. Jian Ma](https://www.cs.cmu.edu/~jianma/).
+- **Carnegie Mellon University** — M.S. in Computational Biology (Aug 2022 – May 2024), Pittsburgh, PA. GPA: 4.06/4.33. Thesis: Leveraging pre-trained language models to address genomics tasks. Awards: Research Excellence and Honors; Outstanding Academic Achievement.
+- **Duke Kunshan University / Duke University** — B.S. in Biology and B.S. in Interdisciplinary Studies (May 2018 – May 2022), Kunshan, China / Durham, NC. GPA: 3.9/4.0, *Magna Cum Laude*.
+
+# 💬 Invited Talks
+
+*(Invited talks will be added here.)*
