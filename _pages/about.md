@@ -12,9 +12,7 @@ redirect_from:
 
 I am **Wenduo Cheng**, a Ph.D. student in Computational Biology at Carnegie Mellon University advised by [Dr. Jian Ma](https://www.cs.cmu.edu/~jianma/). My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. I am currently focused on applying AI to accelerate biological discovery, especially through biological foundation models and autonomous agents.
 
-- **Current**: Ph.D. in Computational Biology, Carnegie Mellon University (Aug 2024 – Present), GPA: 4.00/4.33.
-- **M.S.**: Computational Biology, Carnegie Mellon University (Aug 2022 – May 2024), GPA: 4.06/4.33. Thesis: Leveraging pre-trained language models to address genomics tasks. Awards: Research Excellence and Honors; Outstanding Academic Achievement.
-- **B.S.**: Biology and Interdisciplinary Studies, Duke Kunshan University / Duke University (May 2018 – May 2022), GPA: 3.9/4.0, *Magna Cum Laude*.
+
 
 # 🔥 News
 
