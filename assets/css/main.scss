@@ -43,12 +43,13 @@
 .paper-box {
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
-    
+    border-bottom: 1px solid #e5e7eb;
+    padding: 2.5em 0;
+    gap: 1.5em;
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     .paper-box-image{
         justify-content: center;
@@ -57,16 +58,19 @@
         order: 2;
         img {
             max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        box-shadow 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
     }
-    
+
     .paper-box-text{
         max-width: 100%;
         order: 1;
     }
-    
+
     @include breakpoint($medium) {
         .paper-box-image{
             justify-content: left;
@@ -74,36 +78,69 @@
             max-width: 40%;
             order: 1;
         }
-        
+
         .paper-box-text{
             justify-content: left;
-            padding-left: 2em;
             max-width: 60%;
             order: 2;
+            flex: 1;
         }
-
     }
 
-
+    &:hover {
+        .paper-box-image img {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    }
 }
 
 $scroll_offset : 2em;
-h1:before, .anchor:before { 
-    content: ''; 
-    display: block; 
-    position: relative; 
-    width: 0; 
-    height: $scroll_offset; 
+h1:before, .anchor:before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: $scroll_offset;
     margin-top: -$scroll_offset;
 }
 
 .badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0.25em 0.75em;
     position: absolute;
     margin-top: .5em;
     margin-left: -.5em;
     color: white;
-    background-color: #00369f;
-    font-size: .8em;
+    background-color: #2563eb;
+    font-size: .75em;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+/* Enhanced publication list styling */
+.page__content {
+    ul {
+        li {
+            line-height: 1.8;
+
+            strong {
+                color: #1f2937;
+                font-weight: 600;
+            }
+
+            a {
+                font-weight: 500;
+            }
+        }
+    }
+
+    /* News section enhancements */
+    p > em {
+        display: inline-block;
+        margin-right: 0.5em;
+        font-style: normal;
+        color: #6b7280;
+        font-weight: 500;
+    }
 }

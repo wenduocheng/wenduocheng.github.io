@@ -22,7 +22,9 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
 
 
 # 🔥 News
-*November 2025:* 🎉 DNALongBench has been featured for the [Nature Communications Editors’ Highlights collection -- Computational and Theoretical Biology](https://www.nature.com/collections/cfhfejghec)!
+*April 2026:* 🎉 Our SKILLFOUNDRY preprint is now available on arXiv!
+
+*November 2025:* 🎉 DNALongBench has been featured for the [Nature Communications Editors' Highlights collection -- Computational and Theoretical Biology](https://www.nature.com/collections/cfhfejghec)!
 
 *September 2025:* 🎉 Our DNALongBench work is accepted by Nature Communications!
 
@@ -30,6 +32,7 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
 
 # 📝 Publications
 
+- **SKILLFOUNDRY: Building Self-Evolving Agent Skill Libraries from Heterogeneous Scientific Resources** ([paper](https://arxiv.org/abs/2604.03964) • [code](https://github.com/ma-compbio-lab/SkillFoundry.git) • [project page](https://ma-compbio-lab.github.io/SkillFoundry/#overview)) — *arXiv preprint* arXiv:2604.03964, 2026. Shuaike Shen<sup>†</sup>, **Wenduo Cheng<sup>†</sup>**, Mingqian Ma, Alistair Turcan, Martin Jinye Zhang, Jian Ma.
 - **DNALONGBENCH: A Benchmark Suite for Long-Range DNA Prediction Tasks** ([paper](https://doi.org/10.1038/s41467-025-65077-4) • [code](https://github.com/ma-compbio/DNALONGBENCH.git)) — *Nature Communications* 16, p.10108, 2025. Editors' Highlights. **Wenduo Cheng<sup>†</sup>**, Zhenqiao Song<sup>†</sup>, Yang Zhang<sup>†</sup>, Shike Wang, Danqing Wang, Muyu Yang, Lei Li, Jian Ma.
 - **L2G: Repurposing Language Models for Genomics Tasks** ([paper](https://openreview.net/forum?id=5NM4guc90N) • [code](https://github.com/wenduocheng/L2G.git)) — *Transactions on Machine Learning Research*, 2025. **Wenduo Cheng**, Junhong Shen, Mikhail Khodak, Jian Ma, Ameet Talwalkar.
 - **Specialized Foundation Models Struggle to Beat Supervised Baselines** ([paper](https://doi.org/10.48550/arXiv.2411.02796) • [code](https://github.com/ritvikgupta199/DASHA.git)) — *International Conference on Learning Representations (ICLR)* 2025. Zongzhe Xu, Ritvik Gupta, **Wenduo Cheng**, Alexander Shen, Junhong Shen, Ameet Talwalkar, Mikhail Khodak.
