@@ -22,24 +22,51 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
 
 
 # 🔥 News
-*April 2026:* 🎉 Our SKILLFOUNDRY preprint is now available on arXiv!
+
+<div class="news-scroll" markdown="1">
+
+*June 2026:* 🎉 Our [SKILLFOUNDRY](https://arxiv.org/abs/2604.03964) paper is accepted by COLM 2026!
+
+*May 2026:* 🎉 I will be joining Genentech as an intern starting May 2026!
+
+*May 2026:* 🎉 Our [AgentCo-op](https://arxiv.org/abs/2605.20425) preprint is now available on arXiv!
+
+*April 2026:* 🎉 Our [SKILLFOUNDRY](https://arxiv.org/abs/2604.03964) preprint is now available on arXiv!
 
 *November 2025:* 🎉 DNALongBench has been featured for the [Nature Communications Editors' Highlights collection -- Computational and Theoretical Biology](https://www.nature.com/collections/cfhfejghec)!
 
-*September 2025:* 🎉 Our DNALongBench work is accepted by Nature Communications!
+*September 2025:* 🎉 Our [DNALongBench](https://doi.org/10.1038/s41467-025-65077-4) work is accepted by Nature Communications!
 
-*August 2025:* 🎉 Our L2G paper is accepted by TMLR 2025!
+*August 2025:* 🎉 Our [L2G](https://openreview.net/forum?id=5NM4guc90N) paper is accepted by TMLR 2025!
 
-# 📝 Publications
+</div>
 
-- **SKILLFOUNDRY: Building Self-Evolving Agent Skill Libraries from Heterogeneous Scientific Resources** ([paper](https://arxiv.org/abs/2604.03964) • [code](https://github.com/ma-compbio-lab/SkillFoundry.git) • [project page](https://ma-compbio-lab.github.io/SkillFoundry/#overview)) — *arXiv preprint* arXiv:2604.03964, 2026. Shuaike Shen<sup>†</sup>, **Wenduo Cheng<sup>†</sup>**, Mingqian Ma, Alistair Turcan, Martin Jinye Zhang, Jian Ma.
+<style>
+.news-scroll {
+  max-height: 220px;
+  overflow-y: auto;
+  padding: 0.5em 1em;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 1.5em;
+}
+.news-scroll p:first-child { margin-top: 0; }
+.news-scroll p:last-child { margin-bottom: 0; }
+</style>
+
+# 📝 Selected Publications
+
+A full list of publications is available [here](https://scholar.google.com/citations?user=zXicNrUAAAAJ&hl=en&inst=3203679203499159833). († indicates equal contribution.)
+
+- **AgentCo-op: Retrieval-Based Synthesis of Interoperable Multi-Agent Workflows** ([paper](https://arxiv.org/abs/2605.20425)) — *arXiv preprint* arXiv:2605.20425, 2026. Shuaike Shen<sup>†</sup>, **Wenduo Cheng<sup>†</sup>**.
+- **SKILLFOUNDRY: Building Self-Evolving Agent Skill Libraries from Heterogeneous Scientific Resources** ([paper](https://arxiv.org/abs/2604.03964) • [code](https://github.com/ma-compbio-lab/SkillFoundry.git) • [project page](https://ma-compbio-lab.github.io/SkillFoundry/#overview)) — *Conference on Language Modeling (COLM)* 2026. Shuaike Shen<sup>†</sup>, **Wenduo Cheng<sup>†</sup>**, Mingqian Ma, Alistair Turcan, Martin Jinye Zhang, Jian Ma.
 - **DNALONGBENCH: A Benchmark Suite for Long-Range DNA Prediction Tasks** ([paper](https://doi.org/10.1038/s41467-025-65077-4) • [code](https://github.com/ma-compbio/DNALONGBENCH.git)) — *Nature Communications* 16, p.10108, 2025. Editors' Highlights. **Wenduo Cheng<sup>†</sup>**, Zhenqiao Song<sup>†</sup>, Yang Zhang<sup>†</sup>, Shike Wang, Danqing Wang, Muyu Yang, Lei Li, Jian Ma.
 - **L2G: Repurposing Language Models for Genomics Tasks** ([paper](https://openreview.net/forum?id=5NM4guc90N) • [code](https://github.com/wenduocheng/L2G.git)) — *Transactions on Machine Learning Research*, 2025. **Wenduo Cheng**, Junhong Shen, Mikhail Khodak, Jian Ma, Ameet Talwalkar.
 - **Specialized Foundation Models Struggle to Beat Supervised Baselines** ([paper](https://doi.org/10.48550/arXiv.2411.02796) • [code](https://github.com/ritvikgupta199/DASHA.git)) — *International Conference on Learning Representations (ICLR)* 2025. Zongzhe Xu, Ritvik Gupta, **Wenduo Cheng**, Alexander Shen, Junhong Shen, Ameet Talwalkar, Mikhail Khodak.
 - **The Special and General Mechanism of Cyanobacterial Harmful Algal Blooms** ([paper](https://www.mdpi.com/2076-2607/11/4/987)) — *Microorganisms* 11(4), p.987, 2023. **Wenduo Cheng<sup>†</sup>**, Somin Hwang<sup>†</sup>, Qisen Guo, Leyuan Qian, Weile Liu, Yang Yu, Li Liu, Yi Tao, Huansheng Cao.
-- **Draft Genome Sequence of an Epibiotic Bacterium, *Bacillus cereus*, Isolated from Cyanobacterial Blooms in Lake Taihu, China** ([paper](https://doi.org/10.1128/mra.00936-22)) — *Microbiology Resource Announcements* 12(3), e00936–22, 2023. Xiaoyuan Chen, Yinuo Yang, Yang Yu, Qisen Guo, Somin Hwang, **Wenduo Cheng**, Huansheng Cao.
+<!-- - **Draft Genome Sequence of an Epibiotic Bacterium, *Bacillus cereus*, Isolated from Cyanobacterial Blooms in Lake Taihu, China** ([paper](https://doi.org/10.1128/mra.00936-22)) — *Microbiology Resource Announcements* 12(3), e00936–22, 2023. Xiaoyuan Chen, Yinuo Yang, Yang Yu, Qisen Guo, Somin Hwang, **Wenduo Cheng**, Huansheng Cao. -->
 - **Cyanobacterial Blooms Are Not a Result of Positive Selection by Freshwater Eutrophication** ([paper](https://doi.org/10.1128/spectrum.03194-22)) — *Microbiology Spectrum* 12(3), e03194–22, 2022. Yang Yu<sup>†</sup>, **Wenduo Cheng<sup>†</sup>**, Xiaoyuan Chen, Qisen Guo, Huansheng Cao.
-- **RNA-sequencing and Mathematical Modeling Identify Suite of Light-Sensitive Circadian Genes in an Orb-Web Weaving Spider** ([paper](https://doi.org/10.21203/rs.3.rs-1036447/v1)) — Preprint, *Research Square*, 2021. Natalia Toporikova, **Wenduo Cheng**, Leyuan Qian, Andrew Mah, Thomas Clarke, Thomas C. Jones, Darrell Moore, Nadia A. Ayoub.
+<!-- - **RNA-sequencing and Mathematical Modeling Identify Suite of Light-Sensitive Circadian Genes in an Orb-Web Weaving Spider** ([paper](https://doi.org/10.21203/rs.3.rs-1036447/v1)) — Preprint, *Research Square*, 2021. Natalia Toporikova, **Wenduo Cheng**, Leyuan Qian, Andrew Mah, Thomas Clarke, Thomas C. Jones, Darrell Moore, Nadia A. Ayoub. -->
 
 # 🎓 Education
 
