@@ -164,7 +164,7 @@ I’m slowly working my way through all 63 U.S. National Parks.
 </div>
 
 <style>
-.np-tracker { margin: 1.2em 0 2em; }
+.np-tracker { margin: 1.2em auto 2em; max-width: 620px; }
 .np-head { display: flex; align-items: center; gap: 1em; flex-wrap: wrap; margin-bottom: 0.8em; }
 .np-count { font-weight: 700; font-size: 1.05em; }
 .np-bar { flex: 1 1 160px; height: 10px; background: #e8edf3; border-radius: 999px; overflow: hidden; min-width: 120px; }
