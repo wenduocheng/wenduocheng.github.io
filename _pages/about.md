@@ -13,11 +13,11 @@ redirect_from:
 
 I am **Wenduo Cheng**, a 2nd-year Ph.D. student in the [Ray and Stephanie Lane Computational Biology Department](https://www.cmu.edu/cbd/) at Carnegie Mellon University. I am fortunate to be advised by [Jian Ma](https://www.cs.cmu.edu/~jianma/). Before my Ph.D., I completed an M.S. in Computational Biology at CMU and a B.S. in Genetics and Genomics at [Duke Kunshan University](https://www.dukekunshan.edu.cn/).
 
-My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. My current research interests lie in applying AI to accelerate biological discovery, particularly through biological foundation models and autonomous agents. I am especially interested in:
+My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. My current research interests lie in applying AI to accelerate biological discovery, particularly through biological foundation models and autonomous agents. My work centers on these directions:
 
-- Building biologically meaningful “virtual cell” models that capture evolutionary and regulatory constraints.
-- Using large language models and autonomous agents to accelerate both experimental design and computational analysis.
-- Revealing the principles of gene regulation through multimodal modeling.
+- **Biological Foundation Models:** I build biologically meaningful "virtual cell" models that capture evolutionary and regulatory constraints, aiming for representations that generalize across cell types, modalities, and biological contexts.
+- **Autonomous Agents for Science:** I develop large language models and autonomous agents that accelerate experimental design, computational analysis, and lab automation, turning open-ended scientific questions into reproducible, executable workflows.
+- **Gene Regulation & Multimodal Modeling:** I study the principles of gene regulation through multimodal modeling, integrating sequence, structure, and functional signals to reveal how regulatory information is encoded and read out.
 
 
 
