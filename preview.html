@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preview — News & Publications</title>
+<style>
+  body {
+    max-width: 820px;
+    margin: 2rem auto;
+    padding: 0 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #222;
+  }
+  h1 { border-bottom: 1px solid #eee; padding-bottom: 0.3em; margin-top: 2rem; }
+  a { color: #2a5db0; }
+  .note {
+    background: #fff8e1;
+    border: 1px solid #ffe0a3;
+    border-radius: 6px;
+    padding: 0.6em 1em;
+    font-size: 0.85em;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ---- News (copied from about.md) ---- */
+  .news-scroll {
+    max-height: 220px;
+    overflow-y: auto;
+    padding: 0.5em 0;
+    margin-bottom: 1.5em;
+  }
+  .news-scroll p:first-child { margin-top: 0; }
+  .news-scroll p:last-child { margin-bottom: 0; }
+  .news-scroll a { text-decoration: none; }
+  .news-scroll a:hover { text-decoration: underline; }
+
+  /* ---- Publications (copied from about.md) ---- */
+  .pub-search-wrap { position: relative; margin: 0.6em 0 1.1em; }
+  .pub-search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.55em 0.9em 0.55em 2.2em;
+    font-size: 0.95em;
+    color: #222;
+    border: 1px solid #dfe6ef;
+    border-radius: 999px;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .pub-search:focus {
+    border-color: rgba(58, 123, 213, 0.55);
+    box-shadow: 0 0 0 3px rgba(58, 123, 213, 0.12);
+  }
+  .pub-search-wrap::before {
+    content: "\1F50D";
+    position: absolute;
+    left: 0.85em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.85em;
+    opacity: 0.55;
+    pointer-events: none;
+  }
+  .pub-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 0.9em;
+    margin: 0 0 1.1em;
+  }
+  .pub-sort-label { color: #888; }
+  .pub-sort-dropdown {
+    padding: 0.35em 0.7em;
+    font-size: 0.95em;
+    color: #222;
+    border: 1px solid #dfe6ef;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .pub-sort-dropdown:focus {
+    border-color: rgba(58, 123, 213, 0.55);
+    box-shadow: 0 0 0 3px rgba(58, 123, 213, 0.12);
+  }
+  .pub-kw {
+    text-decoration: none;
+    color: #3a7bd5;
+    padding: 0.1em 0.55em;
+    border-radius: 999px;
+    transition: all 0.15s ease;
+    border: 1px solid rgba(58, 123, 213, 0.28);
+    background: rgba(58, 123, 213, 0.06);
+    font-weight: 600;
+  }
+  .pub-kw:hover { background: rgba(58, 123, 213, 0.13); }
+  .pub-kw.active { color: #fff; background: #3a7bd5; border-color: #3a7bd5; }
+  .pub-kw-sep { color: #ccc; }
+  .pub-noresult { color: #888; font-size: 0.92em; padding: 0.4em 0.2em; display: none; }
+  .publications { margin-bottom: 1.5em; }
+  .publications ol.bibliography {
+    display: grid;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .publications ol.bibliography > li {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 1.1rem 1.2rem;
+    border: 1px solid #dfe6ef;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(9, 35, 77, 0.04);
+    transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .publications ol.bibliography > li::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 3px;
+    background: linear-gradient(180deg, #3a7bd5, #7aa5e0);
+    opacity: 0.45;
+    transition: opacity 0.2s ease, width 0.2s ease;
+  }
+  .publications ol.bibliography > li:hover {
+    border-color: rgba(58, 123, 213, 0.4);
+    background: linear-gradient(120deg, rgba(58, 123, 213, 0.035), rgba(58, 123, 213, 0.015)), #fff;
+    box-shadow: 0 16px 34px rgba(9, 35, 77, 0.10);
+    transform: translateY(-2px);
+  }
+  .publications ol.bibliography > li:hover::before { width: 4px; opacity: 0.85; }
+  .pub-row { display: flex; align-items: flex-start; gap: 1.2em; }
+  .pub-row .abbr { flex: 0 0 230px; text-align: center; }
+  .pub-row .abbr { overflow: hidden; border-radius: 6px; }
+  .pub-row .teaser {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: #f6f6f6;
+    display: block;
+    cursor: zoom-in;
+    transition: transform 0.25s ease;
+  }
+  .pub-row .teaser:hover { transform: scale(1.06); }
+  .pub-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.82);
+    align-items: center;
+    justify-content: center;
+    padding: 3vh 3vw;
+    cursor: zoom-out;
+  }
+  .pub-lightbox.open { display: flex; }
+  .pub-lightbox img {
+    max-width: 96vw;
+    max-height: 92vh;
+    border-radius: 6px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    cursor: default;
+  }
+  .pub-lightbox-close {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.6rem;
+    font-size: 2rem;
+    line-height: 1;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .pub-lightbox-close:hover { opacity: 1; }
+  .pub-row .pub-info { flex: 1 1 auto; min-width: 0; }
+  .pub-row .title { font-weight: 700; line-height: 1.35; }
+  .pub-row .title a { color: inherit; }
+  .pub-row .author { font-size: 0.92em; margin-top: 0.15em; }
+  .pub-row .periodical { font-size: 0.92em; color: #555; margin-top: 0.15em; }
+  .pub-row .links { margin-top: 0.55em; display: flex; flex-wrap: wrap; gap: 0.4em; }
+  .pub-row .links .btn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.76em;
+    font-weight: 700;
+    color: #3a7bd5;
+    border: 1px solid rgba(58, 123, 213, 0.28);
+    border-radius: 999px;
+    background: rgba(58, 123, 213, 0.06);
+    padding: 0.16em 0.65em;
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+  .pub-row .links .btn:hover {
+    border-color: rgba(58, 123, 213, 0.55);
+    background: rgba(58, 123, 213, 0.13);
+    transform: translateY(-1px);
+  }
+  @media (max-width: 600px) {
+    .pub-row { flex-direction: column; gap: 0.5em; }
+    .pub-row .abbr { flex-basis: auto; width: 100%; text-align: left; }
+    .pub-row .teaser { max-height: 160px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="note">⚠️ Standalone preview of the <strong>News</strong> and <strong>Selected Publications</strong> blocks only — the real Jekyll page adds the site theme, nav, and profile sidebar. Image paths point to <code>images/pubs/</code>. Open via a local server (<code>python3 -m http.server</code>) so images load.</div>
+
+<h1>🔥 News</h1>
+<div class="news-scroll">
+  <p><em>06/2026:</em> 🎉 Our <a href="https://arxiv.org/abs/2604.03964">SKILLFOUNDRY</a> paper is accepted by COLM 2026!</p>
+  <p><em>05/2026:</em> 💼 I will be joining Genentech as an intern starting 05/2026!</p>
+  <p><em>05/2026:</em> 🎉 Our <a href="https://arxiv.org/abs/2605.20425">AgentCo-op</a> preprint is now available on arXiv!</p>
+  <p><em>11/2025:</em> 🎉 DNALongBench has been featured for the <a href="https://www.nature.com/collections/cfhfejghec">Nature Communications Editors' Highlights collection -- Computational and Theoretical Biology</a>!</p>
+  <p><em>09/2025:</em> 🎉 Our <a href="https://doi.org/10.1038/s41467-025-65077-4">DNALongBench</a> work is accepted by Nature Communications!</p>
+  <p><em>08/2025:</em> 🎉 Our <a href="https://openreview.net/forum?id=5NM4guc90N">L2G</a> paper is accepted by TMLR 2025!</p>
+</div>
+
+<h1>📝 Selected Publications</h1>
+<p>A full list of publications is available <a href="https://scholar.google.com/citations?user=zXicNrUAAAAJ&amp;hl=en&amp;inst=3203679203499159833">here</a>. (&dagger; indicates equal contribution.)</p>
+
+<div class="publications">
+<div class="pub-search-wrap">
+  <input type="text" id="pub-search" class="pub-search" spellcheck="false" autocomplete="off" placeholder="Type to filter publications…" aria-label="Filter publications">
+</div>
+<div class="pub-controls">
+  <label class="pub-sort-label" for="pub-sort">Sort by:</label>
+  <select id="pub-sort" class="pub-sort-dropdown">
+    <option value="time-desc">Time (Newest)</option>
+    <option value="time-asc">Time (Oldest)</option>
+    <option value="name-asc">Name (A-Z)</option>
+    <option value="name-desc">Name (Z-A)</option>
+  </select>
+  <span class="pub-kw-sep">·</span>
+  <a href="#" class="pub-kw" data-kw="agent">agent</a>
+  <a href="#" class="pub-kw" data-kw="genomics">genomics</a>
+</div>
+<div class="pub-noresult" id="pub-noresult">No publications match your search.</div>
+<ol class="bibliography">
+
+<li data-year="2026" data-keywords="agent">
+<div class="pub-row">
+  <div class="abbr">
+    <img class="teaser" src="images/pubs/agentco-op.png" alt="AgentCo-op teaser">
+  </div>
+  <div class="pub-info">
+    <div class="title">AgentCo-op: Retrieval-Based Synthesis of Interoperable Multi-Agent Workflows</div>
+    <div class="author">Shuaike Shen<sup>&dagger;</sup>, <strong>Wenduo Cheng<sup>&dagger;</sup></strong>, Shike Wang, Mingqian Ma, Jian Ma</div>
+    <div class="periodical"><em>arXiv preprint</em> arXiv:2605.20425, 2026.</div>
+    <div class="links">
+      <a href="https://arxiv.org/abs/2605.20425" class="btn" role="button" target="_blank">Paper</a>
+      <a href="https://github.com/ma-compbio-lab/AgentCo-Op.git" class="btn" role="button" target="_blank">Code</a>
+      <a href="https://ma-compbio-lab.github.io/AgentCo-Op/" class="btn" role="button" target="_blank">Project Page</a>
+    </div>
+  </div>
+</div>
+</li>
+
+<li data-year="2026" data-keywords="agent">
+<div class="pub-row">
+  <div class="abbr">
+    <img class="teaser" src="images/pubs/skillfoundry.png" alt="SkillFoundry teaser">
+  </div>
+  <div class="pub-info">
+    <div class="title">SKILLFOUNDRY: Building Self-Evolving Agent Skill Libraries from Heterogeneous Scientific Resources</div>
+    <div class="author">Shuaike Shen<sup>&dagger;</sup>, <strong>Wenduo Cheng<sup>&dagger;</sup></strong>, Mingqian Ma, Alistair Turcan, Martin Jinye Zhang, Jian Ma</div>
+    <div class="periodical"><em>Conference on Language Modeling (COLM)</em>, 2026.</div>
+    <div class="links">
+      <a href="https://arxiv.org/abs/2604.03964" class="btn" role="button" target="_blank">Paper</a>
+      <a href="https://github.com/ma-compbio-lab/SkillFoundry.git" class="btn" role="button" target="_blank">Code</a>
+      <a href="https://ma-compbio-lab.github.io/SkillFoundry/#overview" class="btn" role="button" target="_blank">Project Page</a>
+    </div>
+  </div>
+</div>
+</li>
+
+<li data-year="2025" data-keywords="genomics">
+<div class="pub-row">
+  <div class="abbr">
+    <img class="teaser" src="images/pubs/dnalongbench.png" alt="DNALongBench teaser">
+  </div>
+  <div class="pub-info">
+    <div class="title">DNALONGBENCH: A Benchmark Suite for Long-Range DNA Prediction Tasks</div>
+    <div class="author"><strong>Wenduo Cheng<sup>&dagger;</sup></strong>, Zhenqiao Song<sup>&dagger;</sup>, Yang Zhang<sup>&dagger;</sup>, Shike Wang, Danqing Wang, Muyu Yang, Lei Li, Jian Ma</div>
+    <div class="periodical"><em>Nature Communications</em> 16, p.10108, 2025. Editors' Highlights.</div>
+    <div class="links">
+      <a href="https://doi.org/10.1038/s41467-025-65077-4" class="btn" role="button" target="_blank">Paper</a>
+      <a href="https://github.com/ma-compbio/DNALONGBENCH.git" class="btn" role="button" target="_blank">Code</a>
+    </div>
+  </div>
+</div>
+</li>
+
+<li data-year="2025" data-keywords="genomics">
+<div class="pub-row">
+  <div class="abbr">
+    <img class="teaser" src="images/pubs/l2g.png" alt="L2G teaser">
+  </div>
+  <div class="pub-info">
+    <div class="title">L2G: Repurposing Language Models for Genomics Tasks</div>
+    <div class="author"><strong>Wenduo Cheng</strong>, Junhong Shen, Mikhail Khodak, Jian Ma, Ameet Talwalkar</div>
+    <div class="periodical"><em>Transactions on Machine Learning Research (TMLR)</em>, 2025.</div>
+    <div class="links">
+      <a href="https://openreview.net/forum?id=5NM4guc90N" class="btn" role="button" target="_blank">Paper</a>
+      <a href="https://github.com/wenduocheng/L2G.git" class="btn" role="button" target="_blank">Code</a>
+    </div>
+  </div>
+</div>
+</li>
+
+<li data-year="2025" data-keywords="genomics">
+<div class="pub-row">
+  <div class="abbr">
+    <img class="teaser" src="images/pubs/dasha.png" alt="Specialized Foundation Models teaser">
+  </div>
+  <div class="pub-info">
+    <div class="title">Specialized Foundation Models Struggle to Beat Supervised Baselines</div>
+    <div class="author">Zongzhe Xu, Ritvik Gupta, <strong>Wenduo Cheng</strong>, Alexander Shen, Junhong Shen, Ameet Talwalkar, Mikhail Khodak</div>
+    <div class="periodical"><em>International Conference on Learning Representations (ICLR)</em>, 2025.</div>
+    <div class="links">
+      <a href="https://doi.org/10.48550/arXiv.2411.02796" class="btn" role="button" target="_blank">Paper</a>
+      <a href="https://github.com/ritvikgupta199/DASHA.git" class="btn" role="button" target="_blank">Code</a>
+    </div>
+  </div>
+</div>
+</li>
+
+<li data-year="2022" data-keywords="biology">
+<div class="pub-row">
+  <div class="abbr">
+    <img class="teaser" src="images/pubs/cyano-selection.png" alt="Cyanobacterial blooms selection teaser">
+  </div>
+  <div class="pub-info">
+    <div class="title">Cyanobacterial Blooms Are Not a Result of Positive Selection by Freshwater Eutrophication</div>
+    <div class="author">Yang Yu<sup>&dagger;</sup>, <strong>Wenduo Cheng<sup>&dagger;</sup></strong>, Xiaoyuan Chen, Qisen Guo, Huansheng Cao</div>
+    <div class="periodical"><em>Microbiology Spectrum</em> 12(3), e03194–22, 2022.</div>
+    <div class="links">
+      <a href="https://doi.org/10.1128/spectrum.03194-22" class="btn" role="button" target="_blank">Paper</a>
+    </div>
+  </div>
+</div>
+</li>
+
+</ol>
+</div>
+
+<div class="pub-lightbox" id="pub-lightbox">
+  <button class="pub-lightbox-close" id="pub-lightbox-close" aria-label="Close preview">&times;</button>
+  <img id="pub-lightbox-img" src="" alt="Publication figure preview">
+</div>
+
+<script>
+(function () {
+  var box = document.getElementById('pub-lightbox');
+  var boxImg = document.getElementById('pub-lightbox-img');
+  var closeBtn = document.getElementById('pub-lightbox-close');
+  if (!box || !boxImg) return;
+  function open(src, alt) {
+    boxImg.src = src;
+    boxImg.alt = alt || 'Publication figure preview';
+    box.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    box.classList.remove('open');
+    boxImg.src = '';
+    document.body.style.overflow = '';
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('.publications .teaser'), function (img) {
+    img.addEventListener('click', function () { open(img.src, img.alt); });
+  });
+  box.addEventListener('click', function (e) {
+    if (e.target === box || e.target === closeBtn) close();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && box.classList.contains('open')) close();
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var input = document.getElementById('pub-search');
+  var list = document.querySelector('.publications ol.bibliography');
+  if (!input || !list) return;
+  var items = Array.prototype.slice.call(list.querySelectorAll('> li'));
+  var noResult = document.getElementById('pub-noresult');
+  var sortSelect = document.getElementById('pub-sort');
+  var kwLinks = Array.prototype.slice.call(document.querySelectorAll('.pub-kw'));
+  var state = { q: '', sort: 'time-desc', kw: '' };
+
+  function titleOf(li) { return li.querySelector('.title').textContent.trim().toLowerCase(); }
+  function yearOf(li) { return parseInt(li.getAttribute('data-year'), 10) || 0; }
+
+  function apply() {
+    var shown = 0;
+    items.forEach(function (li) {
+      var text = li.textContent.toLowerCase();
+      var kws = (li.getAttribute('data-keywords') || '').toLowerCase();
+      var matchQ = state.q === '' || text.indexOf(state.q) !== -1;
+      var matchKw = state.kw === '' || kws.split(/\s+/).indexOf(state.kw) !== -1;
+      var match = matchQ && matchKw;
+      li.style.display = match ? '' : 'none';
+      if (match) shown++;
+    });
+    if (noResult) noResult.style.display = (shown === 0) ? 'block' : 'none';
+    var sorted = items.slice().sort(function (a, b) {
+      switch (state.sort) {
+        case 'time-asc':  return yearOf(a) - yearOf(b);
+        case 'name-asc':  return titleOf(a) < titleOf(b) ? -1 : titleOf(a) > titleOf(b) ? 1 : 0;
+        case 'name-desc': return titleOf(a) < titleOf(b) ? 1 : titleOf(a) > titleOf(b) ? -1 : 0;
+        default:          return yearOf(b) - yearOf(a); // time-desc, newest first
+      }
+    });
+    sorted.forEach(function (li) { list.appendChild(li); });
+  }
+
+  input.addEventListener('input', function () {
+    state.q = input.value.trim().toLowerCase();
+    apply();
+  });
+  if (sortSelect) {
+    sortSelect.addEventListener('change', function () {
+      state.sort = sortSelect.value;
+      apply();
+    });
+  }
+  kwLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var kw = link.getAttribute('data-kw');
+      if (state.kw === kw) {
+        state.kw = '';
+        link.classList.remove('active');
+      } else {
+        state.kw = kw;
+        kwLinks.forEach(function (l) { l.classList.remove('active'); });
+        link.classList.add('active');
+      }
+      apply();
+    });
+  });
+
+  apply();
+})();
+</script>
+
+</body>
+</html>
