@@ -16,7 +16,7 @@ I am **Wenduo Cheng**, a 2nd-year Ph.D. student in the [Ray and Stephanie Lane C
 My background spans bioinformatic sequence analysis, evolutionary biology, environmental science, genome-wide association studies, and deep learning for computational biology. My current research interests lie in applying AI to accelerate biological discovery, particularly through biological foundation models and autonomous agents. My work centers on these directions:
 
 - **Biological Foundation Models:** I build biologically meaningful "virtual cell" models that capture evolutionary and regulatory constraints, aiming for representations that generalize across cell types, modalities, and biological contexts.
-- **Autonomous Agents for Science:** I develop large language models and autonomous agents that accelerate experimental design, computational analysis, and lab automation, turning open-ended scientific questions into reproducible, executable workflows.
+- **Autonomous Agents for Science:** I develop LLM agents that accelerate experimental design, computational analysis, and lab automation, turning open-ended scientific questions into reproducible, executable workflows.
 - **Gene Regulation & Multimodal Modeling:** I study the principles of gene regulation through multimodal modeling, integrating sequence, structure, and functional signals to reveal how regulatory information is encoded and read out.
 
 
@@ -218,17 +218,18 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
   align-items: center;
   font-size: 0.76em;
   font-weight: 700;
-  color: #3a7bd5;
-  border: 1px solid rgba(58, 123, 213, 0.28);
+  color: #1f4f8f;
+  border: 1px solid rgba(58, 123, 213, 0.55);
   border-radius: 999px;
-  background: rgba(58, 123, 213, 0.06);
+  background: rgba(58, 123, 213, 0.14);
   padding: 0.16em 0.65em;
   text-decoration: none;
   transition: all 0.15s ease;
 }
 .pub-row .links .btn:hover {
-  border-color: rgba(58, 123, 213, 0.55);
-  background: rgba(58, 123, 213, 0.13);
+  color: #fff;
+  border-color: #3a7bd5;
+  background: #3a7bd5;
   transform: translateY(-1px);
 }
 @media (max-width: 600px) {
@@ -255,8 +256,8 @@ A full list of publications is available [here](https://scholar.google.com/citat
     <option value="name-desc">Name (Z-A)</option>
   </select>
   <span class="pub-kw-sep">·</span>
+  <a href="#" class="pub-kw" data-kw="genomic-foundation-model">genomic foundation model</a>
   <a href="#" class="pub-kw" data-kw="agent">agent</a>
-  <a href="#" class="pub-kw" data-kw="genomics">genomics</a>
 </div>
 <div class="pub-noresult" id="pub-noresult">No publications match your search.</div>
 <ol class="bibliography">
@@ -297,7 +298,7 @@ A full list of publications is available [here](https://scholar.google.com/citat
 </div>
 </li>
 
-<li data-year="2025" data-keywords="genomics">
+<li data-year="2025" data-keywords="genomic-foundation-model">
 <div class="pub-row">
   <div class="abbr">
     <img class="teaser" src="{{ '/images/pubs/dnalongbench.png' | relative_url }}" alt="DNALongBench teaser">
@@ -314,7 +315,7 @@ A full list of publications is available [here](https://scholar.google.com/citat
 </div>
 </li>
 
-<li data-year="2025" data-keywords="genomics">
+<li data-year="2025" data-keywords="genomic-foundation-model">
 <div class="pub-row">
   <div class="abbr">
     <img class="teaser" src="{{ '/images/pubs/l2g.png' | relative_url }}" alt="L2G teaser">
@@ -331,7 +332,7 @@ A full list of publications is available [here](https://scholar.google.com/citat
 </div>
 </li>
 
-<li data-year="2025" data-keywords="genomics">
+<li data-year="2025" data-keywords="genomic-foundation-model">
 <div class="pub-row">
   <div class="abbr">
     <img class="teaser" src="{{ '/images/pubs/dasha.png' | relative_url }}" alt="Specialized Foundation Models teaser">
@@ -407,7 +408,7 @@ A full list of publications is available [here](https://scholar.google.com/citat
   var input = document.getElementById('pub-search');
   var list = document.querySelector('.publications ol.bibliography');
   if (!input || !list) return;
-  var items = Array.prototype.slice.call(list.querySelectorAll('> li'));
+  var items = Array.prototype.slice.call(list.querySelectorAll(':scope > li'));
   var noResult = document.getElementById('pub-noresult');
   var sortSelect = document.getElementById('pub-sort');
   var kwLinks = Array.prototype.slice.call(document.querySelectorAll('.pub-kw'));
@@ -482,6 +483,3 @@ A full list of publications is available [here](https://scholar.google.com/citat
 - 2024–present, **Ph.D. in Computational Biology**, Carnegie Mellon University
 - 2022-2024, **M.S. in Computational Biology**, Carnegie Mellon University
 - 2018-2022, **B.S. in Genetics and Genomics**, Duke Kunshan University
-
-# 🎲 Miscellaneous
-I’m obsessed with anything involving a racket (pickleball, tennis, squash, badminton, you name it), plus ultimate frisbee and climbing whenever I can sneak it in. I’m also competitive at board games (e.g., 狼人杀, 三国杀, 剧本杀). And I spend a lot of time in the kitchen, happily experimenting with Chinese cuisine.
