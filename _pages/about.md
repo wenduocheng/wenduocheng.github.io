@@ -480,6 +480,76 @@ A full list of publications is available [here](https://scholar.google.com/citat
 
 # 🎓 Education
 
-- 2024–present, **Ph.D. in Computational Biology**, Carnegie Mellon University
-- 2022-2024, **M.S. in Computational Biology**, Carnegie Mellon University
-- 2018-2022, **B.S. in Genetics and Genomics**, Duke Kunshan University
+<div class="cv-section" markdown="0">
+
+  <div class="cv-item">
+    <div class="cv-item-logo"><img src="{{ '/images/edu/cmu.png' | relative_url }}" alt="Carnegie Mellon University logo"></div>
+    <div class="cv-item-main">
+      <div class="cv-item-header">
+        <div class="cv-item-school"><a href="https://www.cmu.edu/" target="_blank" rel="noopener">Carnegie Mellon University</a></div>
+        <div class="cv-item-time">2022 – present</div>
+      </div>
+      <div class="cv-item-meta"><a href="https://www.cmu.edu/cbd/" target="_blank" rel="noopener">Ray and Stephanie Lane Computational Biology Department</a></div>
+      <div class="cv-item-meta cv-item-degree">Ph.D. in Computational Biology <span class="cv-item-when">(2024 – present)</span></div>
+      <div class="cv-item-meta cv-item-degree">M.S. in Computational Biology <span class="cv-item-when">(2022 – 2024)</span></div>
+    </div>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-item-logo"><img src="{{ '/images/edu/dku.png' | relative_url }}" alt="Duke Kunshan University logo"></div>
+    <div class="cv-item-main">
+      <div class="cv-item-header">
+        <div class="cv-item-school"><a href="https://www.dukekunshan.edu.cn/" target="_blank" rel="noopener">Duke Kunshan University</a></div>
+        <div class="cv-item-time">2018 – 2022</div>
+      </div>
+      <div class="cv-item-meta cv-item-degree">B.S. in Genetics and Genomics</div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+.cv-section { display: grid; gap: 0; margin: 0.4em 0 2em; }
+.cv-item {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  gap: 1.16rem;
+  align-items: center;
+  min-height: 96px;
+  padding: 0.6em 0;
+  border-bottom: 1px solid #e6ebf2;
+}
+.cv-item:last-child { border-bottom: 0; }
+.cv-item-logo { display: grid; width: 78px; height: 78px; place-items: center; }
+.cv-item-logo img {
+  display: block;
+  max-width: 72px;
+  max-height: 72px;
+  object-fit: contain;
+  background: #f6f7f9;
+  border-radius: 6px;
+}
+.cv-item-main { display: flex; min-width: 0; flex-direction: column; justify-content: center; }
+.cv-item-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.12rem;
+}
+.cv-item-school { font-size: 1.02em; font-weight: 700; line-height: 1.4; }
+.cv-item-school a { color: inherit; text-decoration: none; }
+.cv-item-school a:hover { color: #3a7bd5; }
+.cv-item-time { flex: 0 0 auto; color: #888; font-size: 0.88em; white-space: nowrap; }
+.cv-item-meta { font-size: 0.92em; color: #555; line-height: 1.45; }
+.cv-item-meta a { color: #555; text-decoration: none; }
+.cv-item-meta a:hover { color: #3a7bd5; text-decoration: underline; }
+.cv-item-degree { font-style: italic; }
+.cv-item-when { font-style: normal; color: #999; font-size: 0.92em; }
+@media (max-width: 520px) {
+  .cv-item { grid-template-columns: 56px minmax(0, 1fr); gap: 0.8rem; }
+  .cv-item-logo { width: 56px; height: 56px; }
+  .cv-item-logo img { max-width: 52px; max-height: 52px; }
+  .cv-item-header { flex-direction: column; align-items: flex-start; gap: 0.1rem; }
+}
+</style>
