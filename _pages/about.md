@@ -487,7 +487,6 @@ A full list of publications is available [here](https://scholar.google.com/citat
     <div class="cv-item-main">
       <div class="cv-item-header">
         <div class="cv-item-school"><a href="https://www.cmu.edu/" target="_blank" rel="noopener">Carnegie Mellon University</a></div>
-        <div class="cv-item-time">2022 – present</div>
       </div>
       <div class="cv-item-meta"><a href="https://www.cmu.edu/cbd/" target="_blank" rel="noopener">Ray and Stephanie Lane Computational Biology Department</a></div>
       <div class="cv-item-meta cv-item-degree">Ph.D. in Computational Biology <span class="cv-item-when">(2024 – present)</span></div>
@@ -499,10 +498,9 @@ A full list of publications is available [here](https://scholar.google.com/citat
     <div class="cv-item-logo"><img src="{{ '/images/edu/dku.png' | relative_url }}" alt="Duke Kunshan University logo"></div>
     <div class="cv-item-main">
       <div class="cv-item-header">
-        <div class="cv-item-school"><a href="https://www.dukekunshan.edu.cn/" target="_blank" rel="noopener">Duke Kunshan University</a></div>
-        <div class="cv-item-time">2018 – 2022</div>
+        <div class="cv-item-school"><a href="https://www.dukekunshan.edu.cn/" target="_blank" rel="noopener">Duke Kunshan University</a> / <a href="https://www.duke.edu/" target="_blank" rel="noopener">Duke University</a></div>
       </div>
-      <div class="cv-item-meta cv-item-degree">B.S. in Genetics and Genomics</div>
+      <div class="cv-item-meta cv-item-degree">B.S. in Genetics and Genomics <span class="cv-item-when">(2018 – 2022)</span></div>
     </div>
   </div>
 
@@ -526,8 +524,6 @@ A full list of publications is available [here](https://scholar.google.com/citat
   max-width: 72px;
   max-height: 72px;
   object-fit: contain;
-  background: #f6f7f9;
-  border-radius: 6px;
 }
 .cv-item-main { display: flex; min-width: 0; flex-direction: column; justify-content: center; }
 .cv-item-header {
