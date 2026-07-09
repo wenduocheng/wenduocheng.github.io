@@ -88,14 +88,18 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
 }
 .pub-sort-label { color: #888; }
 .pub-sort-dropdown {
-  padding: 0.35em 0.7em;
-  font-size: 0.95em;
+  height: 2em;
+  padding: 0 0.7em;
+  font-size: 0.9em;
+  line-height: 1;
+  box-sizing: border-box;
   color: #222;
   border: 1px solid #dfe6ef;
   border-radius: 6px;
   background: #fff;
   cursor: pointer;
   outline: none;
+  vertical-align: middle;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 .pub-sort-dropdown:focus {
@@ -103,14 +107,21 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
   box-shadow: 0 0 0 3px rgba(58, 123, 213, 0.12);
 }
 .pub-kw {
+  display: inline-flex;
+  align-items: center;
+  height: 2em;
+  padding: 0 0.7em;
+  font-size: 0.9em;
+  line-height: 1;
+  box-sizing: border-box;
   text-decoration: none;
   color: #3a7bd5;
-  padding: 0.1em 0.55em;
   border-radius: 999px;
   transition: all 0.15s ease;
   border: 1px solid rgba(58, 123, 213, 0.28);
   background: rgba(58, 123, 213, 0.06);
   font-weight: 600;
+  vertical-align: middle;
 }
 .pub-kw:hover { background: rgba(58, 123, 213, 0.13); }
 .pub-kw.active { color: #fff; background: #3a7bd5; border-color: #3a7bd5; }
@@ -218,10 +229,10 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
   align-items: center;
   font-size: 0.76em;
   font-weight: 700;
-  color: #1f4f8f;
-  border: 1px solid rgba(58, 123, 213, 0.55);
+  color: #12376b;
+  border: 1px solid #9db8de;
   border-radius: 999px;
-  background: rgba(58, 123, 213, 0.14);
+  background: #e3ecf9;
   padding: 0.16em 0.65em;
   text-decoration: none;
   transition: all 0.15s ease;
