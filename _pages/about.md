@@ -25,6 +25,8 @@ My background spans bioinformatic sequence analysis, evolutionary biology, envir
 
 <div class="news-scroll" markdown="1">
 
+*08/2026:* 🎉 Our perspective [Towards Human-Led, Agent-Driven Autonomous Laboratories for the Life Sciences](https://www.preprints.org/manuscript/202608.0273) is now available!
+
 *06/2026:* 🎉 Our [SKILLFOUNDRY](https://arxiv.org/abs/2604.03964) paper is accepted by COLM 2026!
 
 *05/2026:* 💼 I will be joining Genentech as an intern starting 05/2026!
@@ -272,6 +274,22 @@ A full list of publications is available [here](https://scholar.google.com/citat
 </div>
 <div class="pub-noresult" id="pub-noresult">No publications match your search.</div>
 <ol class="bibliography">
+
+<li data-year="2026" data-keywords="agent">
+<div class="pub-row">
+  <div class="abbr">
+    <img class="teaser" src="{{ '/images/pubs/autonomous-labs.png' | relative_url }}" alt="Autonomous Laboratories teaser">
+  </div>
+  <div class="pub-info">
+    <div class="title">Towards Human-Led, Agent-Driven Autonomous Laboratories for the Life Sciences</div>
+    <div class="author"><strong>Wenduo Cheng</strong>, Mingqian Ma, Shuaike Shen, Anna Hupalowska, Jennifer E. Rood, Yang Zhang, Gaurav Agrawal, Christine Bakan, Michelle A. Lee, Aviv Regev<sup>*</sup>, Jian Ma<sup>*</sup></div>
+    <div class="periodical"><em>Preprints.org</em>, 2026. Perspective.</div>
+    <div class="links">
+      <a href="https://www.preprints.org/manuscript/202608.0273" class="btn" role="button" target="_blank">Paper</a>
+    </div>
+  </div>
+</div>
+</li>
 
 <li data-year="2026" data-keywords="agent">
 <div class="pub-row">
