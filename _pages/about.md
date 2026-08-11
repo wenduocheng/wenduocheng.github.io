@@ -283,7 +283,7 @@ A full list of publications is available [here](https://scholar.google.com/citat
   <div class="pub-info">
     <div class="title">Towards Human-Led, Agent-Driven Autonomous Laboratories for the Life Sciences</div>
     <div class="author"><strong>Wenduo Cheng</strong>, Mingqian Ma, Shuaike Shen, Anna Hupalowska, Jennifer E. Rood, Yang Zhang, Gaurav Agrawal, Christine Bakan, Michelle A. Lee, Aviv Regev<sup>*</sup>, Jian Ma<sup>*</sup></div>
-    <div class="periodical"><em>Preprints.org</em>, 2026. Perspective.</div>
+    <div class="periodical"><em>Preprints.org</em>, 2026.</div>
     <div class="links">
       <a href="https://www.preprints.org/manuscript/202608.0273" class="btn" role="button" target="_blank">Paper</a>
     </div>
